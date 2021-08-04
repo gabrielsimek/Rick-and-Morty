@@ -1,7 +1,7 @@
 
-const URL = 'https://rickandmortyapi.com/api/character';
+
 const fetchCharacters = async () => {
-  const characters = await fetch(URL);
+  const characters = await fetch('https://rickandmortyapi.com/api/character');
   const { results } = await characters.json();
   return results.map(({ id, name, status, species, image }) => (
     {
@@ -14,4 +14,18 @@ const fetchCharacters = async () => {
   ));
 };
 
-export default fetchCharacters;
+const fetchCharacter = async (id) => {
+  const characters = await fetch(
+    `https://rickandmortyapi.com/api/character/${id}`);
+  const { name, status, species, image } = await characters.json();
+  return (
+    {
+      name,
+      status,
+      species,
+      image
+    }
+  ); 
+};
+
+export { fetchCharacters, fetchCharacter };
