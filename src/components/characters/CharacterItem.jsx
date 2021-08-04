@@ -24,6 +24,7 @@ CharacterItem.propTypes = {
   species: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 
 };
 

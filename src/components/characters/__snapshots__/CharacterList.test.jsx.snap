@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App CharacterList renders App 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <a
+        href="/character/undefined"
+      >
+        <figure>
+          <img
+            src="image"
+          />
+          <figcaption>
+            <h2>
+              name
+            </h2>
+            <p>
+              species
+            </p>
+            <p>
+              status
+            </p>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

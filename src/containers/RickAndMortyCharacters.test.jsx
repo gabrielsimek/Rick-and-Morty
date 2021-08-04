@@ -15,7 +15,7 @@ const response = { results:
     };
   }) };  
 
-// mock a main route
+
 const server = setupServer(
 
   rest.get('https://rickandmortyapi.com/api/character', (req, res, ctx) => {
