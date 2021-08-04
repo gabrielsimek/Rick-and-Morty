@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CharacterList from '../components/characters/CharacterList';
-import fetchCharacters from '../services/rickAndMortyApi';
+import { fetchCharacters } from '../services/rickAndMortyApi';
 
 
 

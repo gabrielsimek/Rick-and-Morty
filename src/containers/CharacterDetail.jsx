@@ -10,7 +10,7 @@ const CharacterDetail = ({ match, history }) => {
     fetchCharacter(match.params.id)
       .then(character => setCharacter(character))
       .then(() => setLoading(false));
-  });  
+  }, []);  
   const handleClick = () => {
     history.push('/');
   }; 
@@ -27,3 +27,5 @@ CharacterDetail.propTypes = {
   match: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired
 };
+
+export default CharacterDetail;

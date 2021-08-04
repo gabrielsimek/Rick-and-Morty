@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CharacterDetailItem = ({ name, species, status, image, onClick }) => {
+const CharacterDetailItem = (
+  { character, name, species, status, image, onClick }) => {
+ 
   return (
     <figure>
       <img 
-        src={image}/>
+        src={character.image}/>
       <figcaption>
-        <h2>{name}</h2>
-        <p>{species}</p>
-        <p>{status}</p>
+        <h2>{character.name}</h2>
+        <p>{character.species}</p>
+        <p>{character.status}</p>
       </figcaption>
       <button
         onClick={onClick}

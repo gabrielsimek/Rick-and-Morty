@@ -15,17 +15,13 @@ const fetchCharacters = async () => {
 };
 
 const fetchCharacter = async (id) => {
-  const characters = await fetch(
+  const character = await fetch(
     `https://rickandmortyapi.com/api/character/${id}`);
-  const { name, status, species, image } = await characters.json();
-  return (
-    {
-      name,
-      status,
-      species,
-      image
-    }
-  ); 
+  // const Jsonchar = await characters.json();
+  // // console.log(Jsonchar);
+  const characterObj = await character.json();
+  // console.log(name, status, species, image);
+  return characterObj; 
 };
 
 export { fetchCharacters, fetchCharacter };

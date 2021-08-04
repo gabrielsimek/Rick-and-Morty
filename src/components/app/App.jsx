@@ -2,10 +2,11 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route, 
-  Switch,
-  Redirect
+  Switch
 } from 'react-router-dom';
+import CharacterDetail from '../../containers/CharacterDetail';
 import RickAndMortyCharacters from '../../containers/RickAndMortyCharacters';
+
 
 export default function App() {
   return (
