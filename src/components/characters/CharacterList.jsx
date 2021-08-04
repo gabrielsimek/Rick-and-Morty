@@ -5,7 +5,7 @@ import CharacterItem from './CharacterItem';
 const CharacterList = ({ characters }) => {
   const charactersList = characters.map(character => {
     return (
-      <li key={characters.id}>
+      <li key={character.id}>
         <CharacterItem 
           {...character}         
         />
@@ -21,7 +21,7 @@ const CharacterList = ({ characters }) => {
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       species: PropTypes.string.isRequired,
       status: PropTypes.string.isRequired,
