@@ -22,7 +22,6 @@ const CharacterDetail = ({ match, history }) => {
   );
 };
 
-
 CharacterDetail.propTypes = {
   match: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired

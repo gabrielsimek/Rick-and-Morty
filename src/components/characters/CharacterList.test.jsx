@@ -6,7 +6,10 @@ describe('App CharacterList', () => {
   afterEach(() => cleanup());
   it('renders App', () => {
     const { asFragment } = render(<MemoryRouter><CharacterList characters={
-      [{ name: 'name', species: 'species', status: 'status', image: 'image' }]
+      [
+        { id: '1', name: 'name', 
+          species: 'species', status: 'status', image: 'image' }
+      ]
     }/></MemoryRouter>);
     expect(asFragment()).toMatchSnapshot();
   });

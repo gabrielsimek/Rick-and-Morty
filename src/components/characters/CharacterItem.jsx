@@ -12,7 +12,6 @@ const CharacterItem = ({ name, species, status, image, id }) => {
           <h2>{name}</h2>
           <p>{species}</p>
           <p>{status}</p>
-        
         </figcaption>
       </figure>
     </Link>

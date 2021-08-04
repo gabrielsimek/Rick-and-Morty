@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CharacterDetailItem = (
-  { character, name, species, status, image, onClick }) => {
+  { character, onClick }) => {
   //refactor this
   return (
     <figure>

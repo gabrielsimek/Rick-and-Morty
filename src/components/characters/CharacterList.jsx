@@ -12,10 +12,8 @@ const CharacterList = ({ characters }) => {
       </li>
     );
   });
-
-
+  
   return <ul>{charactersList}</ul>;
-
 };
 
 CharacterList.propTypes = {

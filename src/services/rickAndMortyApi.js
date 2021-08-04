@@ -17,9 +17,7 @@ const fetchCharacters = async () => {
 const fetchCharacter = async (id) => {
   const character = await fetch(
     `https://rickandmortyapi.com/api/character/${id}`);
- 
   const characterObj = await character.json();
-
   return characterObj; 
 };
 

@@ -5,7 +5,7 @@ exports[`App CharacterList renders App 1`] = `
   <ul>
     <li>
       <a
-        href="/character/undefined"
+        href="/character/1"
       >
         <figure>
           <img
