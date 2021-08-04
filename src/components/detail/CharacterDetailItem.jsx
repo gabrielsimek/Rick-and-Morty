@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CharacterDetailItem = (
   { character, name, species, status, image, onClick }) => {
- 
+  //refactor this
   return (
     <figure>
       <img 
@@ -21,10 +21,11 @@ const CharacterDetailItem = (
 };
 
 CharacterDetailItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  species: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  // name: PropTypes.string.isRequired,
+  // species: PropTypes.string.isRequired,
+  // status: PropTypes.string.isRequired,
+  // image: PropTypes.string.isRequired,
+  character: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired
 
 };
